@@ -17,6 +17,8 @@
 .topnav-left, .topnav-right {
   display: flex;
   align-items: center;
+  gap: 5px;
+  padding: 0 30px 0 30px;
 }
 
 .topnav a, .topnav p {
