@@ -136,6 +136,11 @@
 }
 
 /* Produkter */
+.product_container{
+justify-content: center;
+padding: 0% 12%;
+}
+
 .products {
   justify-content: center;
   display: flex;
@@ -145,13 +150,18 @@
 
 .product {
   padding: 20px;
-  border: 1px solid #000000;
+  border: 0px solid #000000;
   text-align: center;
 }
 
-button {
+.basket_button {
   background: rgb(138, 183, 192);
   color: rgb(0, 0, 0);
   padding: 10px;
+  margin: 10px;
+  font-size: 1.1rem;
   border: none; 
+}
+.produkt_img {
+  width: 60%;
 }

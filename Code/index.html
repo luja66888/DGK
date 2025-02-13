@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="script.js" defer></script>
-    <script src="basket.js"></script>
     <title>Den Gamle Købmandsgaard</title>
     <link rel="stylesheet" href="brugermenu.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -107,22 +106,24 @@
   </div>
 
   <!-- produkter der kan tilføjes til kurv -->
+   <div class="product_container">
   <div class="products">
       <div class="product">
         <img src="Images/DGKkonfekt.webp" alt="Hattens Konfekt" class="produkt_img">
 
           <h3> Hattens Konfekt</h3>
           <p> 49 kr</p>
-          <button onclick="addToCart('Hattens Konfekt', 49)">Tilføj til kurv</button>
+          <button class="basket_button" onclick="addToCart('Hattens Konfekt', 49)">Tilføj til kurv</button>
       </div>
       <div class="product">
         <img src="Images/aeroe-tshirt.webp" alt="Hattens Konfekt" class="produkt_img">
 
           <h3>Ærø t-shirt</h3>
           <p> 250 kr</p>
-          <button onclick="addToCart('Ærø t-shirt', 250)">Tilføj til kurv</button>
+          <button class="basket_button" onclick="addToCart('Ærø t-shirt', 250)">Tilføj til kurv</button>
       </div>
   </div>
-
+</div>
+<script src="basket.js"></script>
 </body>
 </html>
