@@ -1,6 +1,4 @@
 /* Hovedfilen */
-
-
 nav {
 
   padding: 10px 20px;
@@ -141,7 +139,7 @@ nav {
   align-items: center;
   position: relative;
   top: 100px;
-  height: 5px;
+  height: 0;
   width: 100%;
   z-index: 999;
   background-color: white;
@@ -159,7 +157,7 @@ nav {
 
 /* Slideshow */
 body {
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 .slideshow__container {
@@ -178,8 +176,8 @@ body {
   }
   
   .slideshow__caption {
-      background: rgba(72, 239, 6, 0.6);
-      color: #000000;
+      background: rgb(138, 183, 192);
+      color: rgb(0, 0, 0);
       font-size: 18px;
       font-weight: bold;
       padding: 10px 20px;
