@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <script src="script.js" defer></script>
+    <script src="menu.js" defer></script>
     <script src="basket.js" defer></script>
     <title>Den Gamle Købmandsgaard</title>
     <link rel="stylesheet" href="brugermenu.css">
@@ -41,35 +42,43 @@
     </div>
 
 
-        <!-- Bruger menu -->
+        <!-- menu -->
         <nav>
-            <ul class="sidebar">
-                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>    
-                <li><a href="#">Cafen</a></li>
-                <li><a href="#">Butikken</a></li>  
-                <li><a href="#">Historien</a></li>  
-                <li><a href="#">Ærøske Produkter</a></li> 
-                <li><a href="#">Instagram</a></li> 
-              </ul>
-            <ul>
-              <li><a href="#">Den Gamle Købmandsgaard</a></li>
-              <li class="hideOnMobile"><a href="#">Caféen</a></li>
-              <li class="hideOnMobile"><a href="#">Butikken</a></li>  
-              <li class="hideOnMobile"><a href="#">Historien om DGK</a></li> 
-              <li class="hideOnMobile"><a href="#">Ærøske Produkter</a></li> 
-              <li class="hideOnMobile"><a href="#">Instagram</a></li> 
-              <li class="menu__knap" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="undefined"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
-        </nav>  
-        <script>
-          function showSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'flex'
-          }  
-          function hideSidebar(){
-            const sidebar = document.querySelector('.sidebar')
-            sidebar.style.display = 'none'
-          }
-         </script>
+     
+      
+          <!-- Centreret Navbar -->
+          <ul class="nav-links" id="nav-links">
+              <li class="dropdown">
+                  <a href="#">Shoppen</a>
+                  <div class="mega-menu">
+                      <div class="mega-content">
+                          <h4>Delikatesser</h4>
+                          <ul>
+                              <li><a href="#">Hattesen Konfekt</a></li>
+                              <li><a href="#">Ærø Øl </a></li>
+                          </ul>
+                          <h4> Beklædning</h4>
+                          <ul>
+                              <li><a href="#">Hættetrøjer</a></li>
+                              <li><a href="#">T-shirts</a></li>
+                          </ul>
+                      </div>
+                  </div>
+              </li>
+              <li><a href="#">Caféen</a></li>
+              <li><a href="#">Butikken</a></li>  
+              <li><a href="#">Historien</a></li> 
+              <li><a href="#">Ærøske Producenter</a></li> 
+          </ul>
+      
+          <!-- Hamburger & Menu Knap -->
+          <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+  
+      </nav>
 
     <!-- Slideshow -->
     <div class="slideshow">
