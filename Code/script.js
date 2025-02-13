@@ -15,3 +15,16 @@ function changeSlide(n) {
     document.addEventListener("DOMContentLoaded", () => {
         changeSlide(0);
     });
+
+
+    window.addEventListener('load', () => {
+        const age = prompt("Indtast din alder:");
+        if (age >= 18) {
+          alert("Velkommen til Den Gamle Købmandsgaard!");
+          localStorage.setItem('ageVerified', true); 
+        } else {
+          alert("Du skal være mindst 18 år for at besøge denne side.");
+          window.location.href = "https://www.google.com";
+        }
+      }
+    );
