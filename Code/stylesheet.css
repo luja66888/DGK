@@ -152,6 +152,11 @@ nav {
   width: auto;
 }
 
+.midnav-right {
+  transform: translateX(350px);
+  gap: 5px;
+}
+
 /* Slideshow */
 body {
   padding-top: 50px;
