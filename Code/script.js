@@ -16,7 +16,7 @@ function changeSlide(n) {
         changeSlide(0);
     });
 
-
+/* // jeg har lige gemt det her som note så vi ikke skal verify hver gang //
     window.addEventListener('load', () => {
         const age = prompt("Indtast din alder:");
         if (age >= 18) {
@@ -28,3 +28,5 @@ function changeSlide(n) {
         }
       }
     );
+
+    */
