@@ -3,7 +3,6 @@
 /* Topbar */
 .topnav {
   background-color: #333;
-  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -11,7 +10,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0;
+  padding: 1px 5px;
+  height: 40px;
 }
 
 .topnav-left, .topnav-right {
@@ -34,9 +34,31 @@
   color: black;
 }
 
+/* Midnav */
+.midnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 100px;
+  height: 5px;
+  width: 100%;
+  z-index: 999;
+  background-color: white;
+}
+
+.logo_img {
+  height: 200px;
+  width: auto;
+}
 
 /* Slideshow */
+body {
+  padding-top: 50px;
+}
+
 .slideshow__container {
+  padding-top: 140px;
     max-width: 1000px;
     position: relative;
     margin: auto;
@@ -120,6 +142,7 @@
 /* Når kurven er åben */
 .cart-panel.open {
   right: 0;
+  top: 20px;
 }
 
 /* Header med luk-knap */
