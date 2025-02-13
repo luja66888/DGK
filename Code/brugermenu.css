@@ -70,6 +70,7 @@ nav a:hover{
 .sidebar a{
     width: 100%;
 }
+
 /* Skjul burgerikonet på større skærme */
 @media (min-width: 801px) {
     .menu__knap {
