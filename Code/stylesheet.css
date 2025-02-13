@@ -105,7 +105,6 @@ Basket
   background: none;
   border: none;
   font-size: 20px;
-
 }
 
 /* Produkter */
@@ -125,7 +124,5 @@ button {
   background: rgb(138, 183, 192);
   color: rgb(0, 0, 0);
   padding: 10px;
-  border: none;
-  
+  border: none; 
 }
-
