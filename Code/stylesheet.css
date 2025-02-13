@@ -1,5 +1,104 @@
 /* Hovedfilen */
 
+
+nav {
+
+  padding: 10px 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+
+
+
+.dropdown:hover .mega-menu {
+  display: block;
+}
+
+.mega-menu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  width: 300px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.mega-menu .mega-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: rgb(4, 30, 41);
+}
+
+.sidebar {
+  display: none;
+  flex-direction: column;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+  z-index: 2;
+}
+
+.sidebar a {
+  color: white;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+
+
+ 
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      background-color: #ffffff;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 200px;
+      padding: 10px;
+  }
+
+  .hamburger {
+      display: flex;
+    
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+}
+
+
+
+
 /* Topbar */
 .topnav {
   background-color: #697e70;
