@@ -144,8 +144,9 @@ nav {
 }
 
 .logo_img {
-  height: 200px;
+  height: 120px;
   width: auto;
+  transform: translateX(15px);
 }
 
 .midnav-right {
@@ -353,8 +354,12 @@ gap: 10px;
 }
 
 
-/* Mediaquery til Footer */
+/* Mediaquery */
 @media screen and (min-width: 647px) {
+.logo_img {
+  height: 200px;
+}
+
 .footer__container {
   display: flex;
   flex-direction: row;
