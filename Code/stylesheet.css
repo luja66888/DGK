@@ -54,3 +54,78 @@
     to { opacity: 1; }
   }
   */
+
+  /*
+  body {
+    font-family: ;
+    margin: 0;
+    padding: 0;
+}
+
+Basket  
+
+
+/* Kurv-ikon */
+.cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  color: rgb(0, 0, 0);
+  padding: 10px 15px;
+}
+
+/* Slide-out kurv */
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: -340px;
+  width: 300px;
+  height: 100%;
+  background: white;
+ 
+  transition: right 0.3s ease-in-out;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Når kurven er åben */
+.cart-panel.open {
+  right: 0;
+}
+
+/* Header med luk-knap */
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-header button {
+  background: none;
+  border: none;
+  font-size: 20px;
+
+}
+
+/* Produkter */
+.products {
+  display: flex;
+  gap: 20px;
+  margin: 50px;
+}
+
+.product {
+  padding: 20px;
+  border: 1px solid #000000;
+  text-align: center;
+}
+
+button {
+  background: rgb(138, 183, 192);
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border: none;
+  
+}
+
