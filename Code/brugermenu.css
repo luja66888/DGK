@@ -57,16 +57,16 @@ nav a:hover{
 .sidebar a{
     width: 100%;
 }
-@media(max-width: 800px){
-   .hideOnMobile{
-    display: none;
-   } 
-   .menu__knap{
-    display: block;
-   }
+@media (min-width: 801px) {
+    .menu__knap {
+        display: none
+    }
 }
-@media(max-width: 450px){
-    .sidebar{
-        width: 100%;
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    } 
+    .menu__knap {
+        display: block; 
     }
 }
