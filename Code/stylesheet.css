@@ -14,7 +14,7 @@ nav {
 }
 
 
-
+/* Drop down menu 'Butikken' */
 
 .dropdown:hover .mega-menu {
   display: block;
@@ -70,8 +70,6 @@ nav {
 }
 
 @media (max-width: 768px) {
-
-
  
   .nav-links {
       display: none;
