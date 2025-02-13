@@ -2,19 +2,26 @@
     margin: 0;
     padding: 0;
 }
+
 .roboto-bold-italic {
     font-family: "Roboto", serif;
     font-weight: 700;
     font-style: bold;
     font-size: 18px;
 }
+
 body{
     min-height: 100vh;  
 }
+
 nav{
     background-color: white;
     box-shadow: 3px 3px 5px black(0, 0, 0, 0,1);
+    position: relative;
+    top: 50px;
+    z-index: 999;
 }
+
 nav ul{
     width: 100%;
     list-style: none;
@@ -22,9 +29,11 @@ nav ul{
     justify-content: center;
     align-items: center;
 }
+
 nav li{
     height: 50px;
 }
+
 nav a{
     height: 100%;
     padding: 0 30px;
@@ -33,40 +42,46 @@ nav a{
     align-items: center;
     color: black;
 }
+
 nav a:hover{
     background-color: lightgray;
 }
+
 .sidebar{
     position: fixed;
-    top: 0;
+    top: 100px;
     right: 0;
-    height: 100vh;
+    height: calc(100vh - 100px);
     width: 250px;
-    z-index: 999;
-    background-color: gray (255, 255, 255, 0,2);
+    z-index: 1000;
+    background-color: gray (255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
-    box-shadow: -10px 0 10px black(0, 0, 0, 0,1);
+    box-shadow: -10px 0 10px black(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
+
 .sidebar li{
     width: 100%;
 }
+
 .sidebar a{
     width: 100%;
 }
+/* Skjul burgerikonet på større skærme */
 @media (min-width: 801px) {
     .menu__knap {
-        display: none
+        display: none !important;
     }
 }
+/* Sørg for, at det stadig skjules på små skærme */
 @media (max-width: 800px) {
     .hideOnMobile {
         display: none;
     } 
     .menu__knap {
-        display: block; 
+        display: block; /* Eller fjern denne linje, hvis du vil skjule den helt */
     }
 }
