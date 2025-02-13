@@ -141,7 +141,7 @@ nav {
   top: 100px;
   height: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 998;
   background-color: white;
 }
 
@@ -290,4 +290,105 @@ padding: 0% 12%;
 }
 .produkt_img {
   width: 60%;
+}
+
+
+
+/* Footer */
+.footer {
+  background-color: #697e70;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer__links ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer__links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
+/* MIDT FOOTER */
+.footer__logo {
+display: flex;
+flex-direction: row;
+gap: 10px;
+}
+
+.footer__logo img {
+  max-height: 50px;
+  margin-bottom: 10px;
+}
+
+.footer__logo p {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* HØJRE FOOTER */
+
+.footer__kontakt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 5px;
+}
+
+
+/* Mediaquery til Footer */
+@media screen and (min-width: 647px) {
+.footer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 160px;
+  margin-right: 160px;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.footer__links ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  text-align: center;
+}
+
+.footer__logo p {
+  display: flex;
+  text-align: center;
+}
+
+.footer__kontakt {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
 }
