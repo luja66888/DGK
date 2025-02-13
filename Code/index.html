@@ -38,7 +38,9 @@
             <i class="fa-solid fa-magnifying-glass"></i>
             <i class="fa-solid fa-user"></i>
             <i class="fa-solid fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-cart-shopping" onclick="toggleCart()">
+                <span class="cart-count" id="cart-count">0</span>
+            </i>
         </div>
     </div>
 
@@ -109,9 +111,7 @@
 <!-- Indkøbskurv-->
 
      <!-- Kurv-ikon oppe i højre hjørne -->
-    <div class="cart-icon" onclick="toggleCart()">
-        🛒 <span id="cart-count">0</span>
-    </div>
+    
 
   <!-- Indkøbskurvens slide-out  -->
   <div class="cart-panel" id="cart-panel">
