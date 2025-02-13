@@ -70,5 +70,41 @@
         </div>
     </div>
 
+<!-- Indkøbskurv-->
+
+     <!-- Kurv-ikon oppe i højre hjørne -->
+     <div class="cart-icon" onclick="toggleCart()">
+      🛒 <span id="cart-count">0</span>
+  </div>
+
+  <!-- Indkøbskurvens slide-out  -->
+  <div class="cart-panel" id="cart-panel">
+      <div class="cart-header">
+          <h2>Din kurv</h2>
+          <button onclick="toggleCart()">✖</button>
+      </div>
+      <div id="cart-items">
+          <p>Din kurv er tom.</p>
+      </div>
+      <div class="cart-footer">
+          <p>Total: <span id="cart-total">0</span>kr</p>
+      </div>
+  </div>
+
+  <!-- produkter der kan tilføjes til kurv -->
+  <div class="products">
+      <div class="product">
+          <h3> Hattens Konfekt</h3>
+          <p> 49 kr</p>
+          <button onclick="addToCart('Hattens Konfekt', 49)">Tilføj til kurv</button>
+      </div>
+      <div class="product">
+          <h3>Ærø t-shirt</h3>
+          <p> 250 kr</p>
+          <button onclick="addToCart('Ærø t-shirt', 250)">Tilføj til kurv</button>
+      </div>
+  </div>
+
+  <script src="basket.js"></script>
 </body>
 </html>
