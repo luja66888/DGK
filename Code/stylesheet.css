@@ -225,14 +225,6 @@ body {
 
 /*Basket */ 
 
-/* Kurv-ikon */
-.cart-icon {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  color: rgb(0, 0, 0);
-  padding: 10px 15px;
-}
 
 /* Slide-out kurv */
 .cart-panel {

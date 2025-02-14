@@ -18,6 +18,11 @@ function addToCart(name, price) {
     cart.push({ name, price });
     updateCart();
 }
+// Funktion til at fjerne produkt fra kurven
+function removeFromCart(index) {
+    cart.splice(index, 1); // Fjern produktet baseret på index
+    updateCart();
+}
 
 // Funktion til at opdatere indkøbskurven, if-else, DOM, Operator =+, for-loop, array
 function updateCart() {
@@ -25,13 +30,15 @@ function updateCart() {
     let total = 0;
 
     if (cart.length === 0) {
-        cartItems.innerHTML = "<p>Din kurv er tom.</p>"; // tekst bliver udskiftet med produkter med else
+        cartItems.innerHTML = "<p>Din kurv er tom.</p>";
     } else {
-        for (let i = 0; i < cart.length; i++) {  //  for-loop
-            const item = cart[i]; // Hent produktet fra arrayet
-            total += item.price; // Tilføj prisen for hvert produkt til den samlede pris
-            cartItems.innerHTML += `<p>${item.name}  ${item.price} DKK</p>`; // Opdater DOM med produktinformation
-        }
+        cart.forEach((item, index) => {
+            total += item.price;
+            cartItems.innerHTML += `
+                <p>${item.name} - ${item.price} DKK 
+                <button onclick="removeFromCart(${index})">Fjern</button>
+                </p>`;
+        });
     }
 
     cartTotal.textContent = total; // Opdater den samlede pris i DOM
