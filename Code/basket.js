@@ -1,12 +1,12 @@
 
-
+// Thea
 
 // Variabler 
-var cart = [];
-var cartPanel = document.getElementById("cart-panel");
-var cartItems = document.getElementById("cart-items");
-var cartTotal = document.getElementById("cart-total");
-var cartCount = document.getElementById("cart-count");
+let cart = [];   // Array til at gemme produkter i kurven
+const cartPanel = document.getElementById("cart-panel");
+const cartItems = document.getElementById("cart-items");
+const cartTotal = document.getElementById("cart-total");
+const cartCount = document.getElementById("cart-count");
 
 // Funktion til at vise/skjule indkøbskurven
 function toggleCart() {
@@ -22,13 +22,13 @@ function addToCart(name, price) {
 // Funktion til at opdatere indkøbskurven, if-else, DOM, Operator =+, for-loop, array
 function updateCart() {
     cartItems.innerHTML = "";
-    var total = 0;
+    let total = 0;
 
     if (cart.length === 0) {
         cartItems.innerHTML = "<p>Din kurv er tom.</p>"; // tekst bliver udskiftet med produkter med else
     } else {
-        for (var i = 0; i < cart.length; i++) {  //  for-loop
-            var item = cart[i]; // Hent produktet fra arrayet
+        for (let i = 0; i < cart.length; i++) {  //  for-loop
+            const item = cart[i]; // Hent produktet fra arrayet
             total += item.price; // Tilføj prisen for hvert produkt til den samlede pris
             cartItems.innerHTML += `<p>${item.name}  ${item.price} DKK</p>`; // Opdater DOM med produktinformation
         }
@@ -37,3 +37,4 @@ function updateCart() {
     cartTotal.textContent = total; // Opdater den samlede pris i DOM
     cartCount.textContent = cart.length; // Opdater antallet af varer i DOM
 }
+
