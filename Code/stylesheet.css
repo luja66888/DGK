@@ -13,7 +13,7 @@ nav {
 }
 
 
-/* Drop down menu 'Butikken' */
+/* Drop down menu 'Butikken' .... Thea */
 
 .dropdown:hover .mega-menu {
   display: block;
@@ -94,7 +94,7 @@ nav {
 
 
 
-/* Topbar */
+/* Topbar ... Lucas*/
 .topnav {
   background-color: #697e70;
   overflow: hidden;
@@ -116,6 +116,10 @@ nav {
   padding: 0 30px 0 30px;
 }
 
+.topnav-right {
+  color: white;
+}
+
 .topnav a, .topnav p {
   color: #f2f2f2;
   text-align: center;
@@ -129,7 +133,9 @@ nav {
   color: black;
 }
 
-/* Midnav */
+
+
+/* Midnav .... Lucas */
 .midnav {
   display: flex;
   justify-content: center;
@@ -153,7 +159,10 @@ nav {
   gap: 20px;
 }
 
-/* Slideshow */
+
+
+
+/* Slideshow .... Lucas */
 body {
   padding-top: 10px;
 }
@@ -293,7 +302,7 @@ padding: 0% 12%;
 
 
 
-/* Footer */
+/* Footer ..... Lucas */
 .footer {
   background-color: #697e70;
   color: white;
