@@ -1,6 +1,3 @@
-
-// Thea
-
 // Variabler 
 let cart = [];   // Array til at gemme produkter i kurven
 const cartPanel = document.getElementById("cart-panel");
@@ -44,4 +41,3 @@ function updateCart() {
     cartTotal.textContent = total; // Opdater den samlede pris i DOM
     cartCount.textContent = cart.length; // Opdater antallet af varer i DOM
 }
-
