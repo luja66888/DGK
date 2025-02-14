@@ -1,6 +1,6 @@
 // Hovedfilen
 
-// Slideshow
+// Slideshow ..... Lucas
 let currentIndex = 0;
 function changeSlide(n) {
     let slides = document.getElementsByClassName("slideshow__slide");
