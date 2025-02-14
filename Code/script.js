@@ -16,7 +16,7 @@ function changeSlide(n) {
         changeSlide(0);
     });
 
-/*
+/* ............. Joachim (det her er den gamle version, men vi kan stadig tage det med)
     function checker() {
       let age = document.getElementById('age').value.trim();
       const message = document.getElementById('answer');
@@ -39,7 +39,8 @@ function changeSlide(n) {
 
   */
 
-/* // jeg har lige gemt det her som note så vi ikke skal verify hver gang //
+
+/*  Alert menu..................... Joachim */                                        
     window.addEventListener('load', () => {
         const age = prompt("Indtast din alder:");
         if (age >= 18) {
@@ -51,5 +52,3 @@ function changeSlide(n) {
         }
       }
     );
-
-    */
