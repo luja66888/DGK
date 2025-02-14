@@ -21,7 +21,7 @@ function removeFromCart(index) {
     updateCart();
 }
 
-// Funktion til at opdatere indkøbskurven, if-else, DOM, Operator =+, for-loop, array
+// Funktion til at opdatere indkøbskurven, if-else, DOM, Operator =+, for-loop, 
 function updateCart() {
     cartItems.innerHTML = "";
     let total = 0;
@@ -29,15 +29,15 @@ function updateCart() {
     if (cart.length === 0) {
         cartItems.innerHTML = "<p>Din kurv er tom.</p>";
     } else {
-        cart.forEach((item, index) => {
-            total += item.price;
+        for (let i = 0; i < cart.length; i++) {
+            total += cart[i].price;
             cartItems.innerHTML += `
-                <p>${item.name} - ${item.price} DKK 
-                <button onclick="removeFromCart(${index})">Fjern</button>
+                <p>${cart[i].name} - ${cart[i].price} DKK 
+                <button onclick="removeFromCart(${i})">Fjern</button>
                 </p>`;
-        });
+        }
     }
 
-    cartTotal.textContent = total; // Opdater den samlede pris i DOM
-    cartCount.textContent = cart.length; // Opdater antallet af varer i DOM
+    cartTotal.textContent = total; // Opdater den samlede pris 
+    cartCount.textContent = cart.length; // Opdater antallet af varer 
 }
